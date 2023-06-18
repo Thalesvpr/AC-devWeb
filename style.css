@@ -16,8 +16,7 @@
 }
 
 #content {
-  padding-inline: 100px;
-      display: flex;
+    display: flex;
     align-items: center;
     flex-direction: column;
 }

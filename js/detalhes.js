@@ -39,17 +39,16 @@ const cria_detalhe = (entrada, alvo) => {
     container.className = 'detalhes'
     const nome_completo = document.createElement('div')
     const posicao = document.createElement('div')
- 
+    const altura = document.createElement('div')
     const nascimento = document.createElement('div')
     const descricao = document.createElement('div')
-    const altura = document.createElement('div')
-
+    
     nome_completo.id = 'nome_completo'
     posicao.id = 'posicao'
-   
+    altura.id = 'altura'
     nascimento.id = 'nascimento'
     descricao.id = 'descricao'
-    altura.id = 'altura'
+    
     
 
 
@@ -63,10 +62,10 @@ altura.innerHTML = entrada.altura
 
 container.appendChild(nome_completo);
 container.appendChild(posicao);
-
+container.appendChild(altura);
 container.appendChild(nascimento);
 container.appendChild(descricao);
-container.appendChild(altura);
+
 
 
 alvo.appendChild(container);
