@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "Tusker Grotesk";
+    src: url("assets/fonts/Tusker.Grotesk/Tusker.Grotesk/TuskerGrotesk-5600SemiBold.ttf");
+  }
+
+.card {
+    border: 6px solid white;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px rgb(172, 172, 172);
+    background-size: cover;
+    height: 498px;
+    width: 348px;
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+  .card_actions{
+    margin-top: 20em;
+    height: 70px;
+  }
+  .detalhes{
+    width: 60%;
+  }
+
+ #content{
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+    #nome_completo{font-family: 'Tusker Grotesk', sans-serif;
+        font-size: 7.8em;
+        margin: 0px;
+        width: 5em;}
+    #posicao{ 
+       
+        font-family: 'Oswald', sans-serif;
+        font-weight: 200;
+        font-size: 2.5em;}
+   
+    #nascimento{    font-family: 'Tusker Grotesk', sans-serif;
+        font-size: 1.5em;
+        margin: 0px;
+       }
+    #descricao{font-family: 'poppings', sans-serif;
+        font-weight: 400;
+        font-size: 1.1em;}
+    #altura{font-family: 'poppings', sans-serif;
+        font-weight: 400;
+        font-size: 1.1em;}
