@@ -52,8 +52,12 @@ h2 {
   background-size: cover;
   height: 332px;
   width: 232px;
-  position: relative; 
-
+  transition: transform 0.3s ease, top 0.3s ease, right 0.3s ease;
+  position: relative;
+}
+.card:hover {
+  cursor: pointer;
+ transform: rotate(-1deg) translateY(-20px);
 }
 
 
