@@ -2,7 +2,6 @@
   font-family: "Tusker Grotesk";
   src: url("https://thalesvpr.github.io/AC-devWeb/assets/fonts/Tusker.Grotesk/Tusker.Grotesk/TuskerGrotesk-5600Semibold.ttf");
 }
-
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 #header {
@@ -17,15 +16,15 @@
 }
 
 #content {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 h2 {
-
+  
   margin-top: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 2em ;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 2.5em;
@@ -34,7 +33,7 @@ h2 {
 
 .line {
   background-color: lightgray;
-  margin-bottom: 50px;
+  margin-bottom: 50px ;
   height: 0.5em;
   width: 50%;
   border-radius: 25px;
@@ -46,7 +45,6 @@ h2 {
   gap: 35px;
   row-gap: 60px;
 }
-
 .card {
   border: 6px solid white;
   border-radius: 25px;
@@ -54,51 +52,48 @@ h2 {
   background-size: cover;
   height: 332px;
   width: 232px;
-  position: relative;
+  position: relative; 
 
 }
 
 
 
 
+  
+  .card_bottom_bar {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .card_title {
+    font-family: 'Tusker Grotesk', sans-serif;
+    font-size: 1.5em;
+    margin: 0px;
+    width: 5em;
+  }
+  .card_subtitle {
+    font-family: 'poppings', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
 
-.card_bottom_bar {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
+    
+  }
+  .card_actions{
+    height: 30px;
+  }
 
-.card_title {
-  font-family: 'Tusker Grotesk', sans-serif;
-  font-size: 1.5em;
-  margin: 0px;
-  width: 5em;
-}
-
-.card_subtitle {
-  font-family: 'poppings', sans-serif;
-  font-weight: 400;
-  font-size: 1.1em;
-
-
-}
-
-.card_actions {
-  height: 30px;
-}
-
-
+  
 @media screen and (max-width: 1250px) {
   .container {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     row-gap: 40px;
   }
-
+  
 }
 
 @media screen and (max-width: 990px) {
@@ -107,54 +102,40 @@ h2 {
     gap: 20px;
     row-gap: 40px;
   }
-
   h2 {
     font-size: 1.5em;
   }
-
-  .card_title {
-    font-size: 1.25em;
-  }
-
-  .card_subtitle {
-    font-size: 1em;
-  }
-
-  .card {
+    .card_title {
+      font-size: 1.25em;}
+      .card_subtitle {
+        font-size: 1em;}
+  .card{
     height: 265px;
     width: 185px;
   }
-
   .card_actions {
     height: 27px;
-  }
+}
 }
 
 @media screen and (max-width: 730px) {
   .container {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     row-gap: 40px;
   }
-
   h2 {
     font-size: 1.5em;
   }
-
-  .card_title {
-    font-size: 1em;
-  }
-
-  .card_subtitle {
-    font-size: 0.7em;
-  }
-
-  .card {
+    .card_title {
+      font-size: 1em;}
+      .card_subtitle {
+        font-size: 0.7em;}
+  .card{
     height: 212px;
     width: 148px;
   }
-
   .card_actions {
     height: 20px;
-  }
+}
 }
