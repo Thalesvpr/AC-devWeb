@@ -39,6 +39,13 @@ const cria_nome_completo = (entrada, alvo) => {
 
 
 }
+const cria_final_pagina = (alvo) => {
+    const final_pagina = document.createElement('div')
+    final_pagina.id = 'final_pagina'
+    alvo.appendChild(final_pagina);
+
+
+}
 
 function transformString(string) {
     var words = string.toLowerCase().split(' ');
@@ -107,13 +114,24 @@ const cria_botao_voltar = (alvo) => {
     alvo.appendChild(container);
 }
 
+
 const content = document.getElementById("content")
 cria_cartao(primeiroValor, content)
 cria_nome_completo(primeiroValor, content)
 const bottom = document.getElementById("bottom")
 cria_detalhe(primeiroValor, bottom)
-
 cria_botao_voltar(bottom)
+cria_final_pagina(document.body)
 
-
-
+const final_pagina = document.getElementById("final_pagina")
+window.addEventListener('scroll', () => {
+    if (userReachedBottom()) {
+        final_pagina.style.opacity='0'
+    } else {
+        final_pagina.style.opacity='1'
+    }
+  });
+  
+  function userReachedBottom() {
+    return window.scrollY + window.innerHeight >= document.documentElement.scrollHeight;
+  }
