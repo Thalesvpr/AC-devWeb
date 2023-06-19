@@ -2,6 +2,7 @@
   font-family: "Tusker Grotesk";
   src: url("https://thalesvpr.github.io/AC-devWeb/assets/fonts/Tusker.Grotesk/Tusker.Grotesk/TuskerGrotesk-5600Semibold.ttf");
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 #header {
@@ -16,15 +17,15 @@
 }
 
 #content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 h2 {
-  
+
   margin-top: 2em;
-  margin-bottom: 2em ;
+  margin-bottom: 2em;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 2.5em;
@@ -33,7 +34,7 @@ h2 {
 
 .line {
   background-color: lightgray;
-  margin-bottom: 50px ;
+  margin-bottom: 50px;
   height: 0.5em;
   width: 50%;
   border-radius: 25px;
@@ -45,6 +46,7 @@ h2 {
   gap: 35px;
   row-gap: 60px;
 }
+
 .card {
   border: 6px solid white;
   border-radius: 25px;
@@ -55,49 +57,64 @@ h2 {
   transition: transform 0.3s ease, top 0.3s ease, right 0.3s ease;
   position: relative;
 }
+
 .card:hover {
   cursor: pointer;
- transform: rotate(-1deg) translateY(-20px);
+  transform: rotate(-1deg) translateY(-20px);
+}
+
+#final_pagina {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  position: fixed;
+  left: 0;
+  bottom: -100px;
+  width: 100%;
+  height: 200px;
+  background: rgb(52,52,52);
+  background: linear-gradient(0deg, rgba(52,52,52,0.7973564425770308) 0%, rgba(255,255,255,0) 100%);
 }
 
 
 
 
-  
-  .card_bottom_bar {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .card_title {
-    font-family: 'Tusker Grotesk', sans-serif;
-    font-size: 1.5em;
-    margin: 0px;
-    width: 5em;
-  }
-  .card_subtitle {
-    font-family: 'poppings', sans-serif;
-    font-weight: 400;
-    font-size: 1.1em;
+.card_bottom_bar {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
-    
-  }
-  .card_actions{
-    height: 30px;
-  }
+.card_title {
+  font-family: 'Tusker Grotesk', sans-serif;
+  font-size: 1.5em;
+  margin: 0px;
+  width: 5em;
+}
 
-  
+.card_subtitle {
+  font-family: 'poppings', sans-serif;
+  font-weight: 400;
+  font-size: 1.1em;
+
+
+}
+
+.card_actions {
+  height: 30px;
+}
+
+
 @media screen and (max-width: 1250px) {
   .container {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     row-gap: 40px;
   }
-  
+
 }
 
 @media screen and (max-width: 990px) {
@@ -106,20 +123,27 @@ h2 {
     gap: 20px;
     row-gap: 40px;
   }
+
   h2 {
     font-size: 1.5em;
   }
-    .card_title {
-      font-size: 1.25em;}
-      .card_subtitle {
-        font-size: 1em;}
-  .card{
+
+  .card_title {
+    font-size: 1.25em;
+  }
+
+  .card_subtitle {
+    font-size: 1em;
+  }
+
+  .card {
     height: 265px;
     width: 185px;
   }
+
   .card_actions {
     height: 27px;
-}
+  }
 }
 
 @media screen and (max-width: 730px) {
@@ -128,18 +152,25 @@ h2 {
     gap: 20px;
     row-gap: 40px;
   }
+
   h2 {
     font-size: 1.5em;
   }
-    .card_title {
-      font-size: 1em;}
-      .card_subtitle {
-        font-size: 0.7em;}
-  .card{
+
+  .card_title {
+    font-size: 1em;
+  }
+
+  .card_subtitle {
+    font-size: 0.7em;
+  }
+
+  .card {
     height: 212px;
     width: 148px;
   }
+
   .card_actions {
     height: 20px;
-}
+  }
 }

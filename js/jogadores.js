@@ -72,3 +72,25 @@ jogadores.forEach((e) => {
   }
 })
 
+const cria_final_pagina = (alvo) => {
+  const final_pagina = document.createElement('div')
+  final_pagina.id = 'final_pagina'
+  alvo.appendChild(final_pagina);
+
+
+}
+
+cria_final_pagina(document.body)
+
+const final_pagina = document.getElementById("final_pagina")
+window.addEventListener('scroll', () => {
+    if (userReachedBottom()) {
+        final_pagina.style.opacity='0'
+    } else {
+        final_pagina.style.opacity='1'
+    }
+  });
+  
+  function userReachedBottom() {
+    return window.scrollY + window.innerHeight >= document.documentElement.scrollHeight;
+  }
