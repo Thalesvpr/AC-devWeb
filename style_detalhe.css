@@ -2,6 +2,44 @@
     font-family: "Tusker Grotesk";
     src: url("https://thalesvpr.github.io/AC-devWeb/assets/fonts/Tusker.Grotesk/Tusker.Grotesk/TuskerGrotesk-5600Semibold.ttf");
   }
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+  #voltar_buttom{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #voltar_buttom:hover {
+    background-color: black;
+    
+    cursor: pointer;
+    text-decoration: white;
+  }
+    #voltar_content{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+  }
+  #voltar_buttom:hover #voltar_content {
+    color: #fff;
+  }
+
+  i.material-symbols-outlined {
+    font-size: 18px;
+  }
+  #voltar_buttom:hover i {
+    color: #fff;
+  }
 
 .card {
     border: 10px solid white;
@@ -38,7 +76,7 @@
 
     #nome_completo{font-family: 'Tusker Grotesk', sans-serif;
         font-size: 7em;
-        width: 5em;}
+        width: 5.5em;}
     #posicao{ 
        
         font-family: 'Oswald', sans-serif;
@@ -52,12 +90,12 @@
        }
     #descricao{
         
-        font-family: 'poppings', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-weight: 400;
         font-size: 1.1em;
         margin-top: 4em;
         text-align:left;}
-    #altura{font-family: 'poppings', sans-serif;
+    #altura{font-family: 'Poppins', sans-serif;
         font-weight: 400;
         font-size: 1.1em;}
 

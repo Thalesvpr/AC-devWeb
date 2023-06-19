@@ -8,18 +8,14 @@ const param = url.searchParams.get("nome_completo");
 
 
 
-// var param = params.get('param');
 
-var primeiroValor = jogadores.find(e => e.nome_completo == param);
+let primeiroValor = jogadores.find(e => e.nome_completo == param);
 
 
 const cria_cartao = (entrada, alvo) => {
     const container = document.createElement('div');
     container.className = 'card'
 
-
-
-    
 
     container.style.backgroundImage = `linear-gradient(0deg, rgba(0,0,0,1) 16%, rgba(0,0,0,0.6474964985994398) 45%, rgba(0,0,0,0) 70%), url('${entrada.imagem}')`;
  
@@ -73,6 +69,27 @@ alvo.appendChild(container);
     
 }
 
+const cria_botao_voltar = (alvo) => {
+    const container = document.createElement('button');
+    container.id = 'voltar_buttom'
+    const icon = document.createElement('i');
+    icon.className = 'material-symbols-outlined'
+    icon.innerHTML = 'arrow_back_ios'
+    container.appendChild(icon)
+    const content = document.createElement('span');
+    content.id = 'voltar_content'
+    content.innerHTML = 'voltar'
+    container.appendChild(content)
+    container.addEventListener("click", function() {
+        window.history.back();
+      });
+    alvo.appendChild(container);}
+
 const content =  document.getElementById("content")
 cria_cartao(primeiroValor, content)
 cria_detalhe(primeiroValor, content)
+const bottom =  document.getElementById("bottom")
+cria_botao_voltar(bottom)
+
+
+

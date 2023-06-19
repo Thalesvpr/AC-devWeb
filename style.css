@@ -58,8 +58,7 @@ h2 {
 
   
   .card_bottom_bar {
-    width: 200px;
-    margin-inline: 5%;
+    width: 100%;
     position: absolute;
     bottom: 0;
     color: white;
@@ -81,9 +80,8 @@ h2 {
     
   }
   .card_actions{
-    object-fit:contain;
-    height: 25px;
-    margin-bottom: 2em;
+    margin-top: 10px;
+    height: 30px;
   }
 
   
@@ -93,6 +91,7 @@ h2 {
     gap: 20px;
     row-gap: 40px;
   }
+  
 }
 
 @media screen and (max-width: 990px) {
